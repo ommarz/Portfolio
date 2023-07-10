@@ -253,8 +253,7 @@ header {
 }
 
 .tools_list_card {
-  display: flex;
-  flex-direction: row;
+  float: left;
   list-style: none;
   max-width: 60vw;
   padding: 0;
