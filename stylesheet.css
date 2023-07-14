@@ -539,7 +539,7 @@ fieldset {
   color: #fff;
   border: none;
   text-align: center;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 1.0625rem;
   font-style: normal;
   font-weight: 700;
@@ -560,4 +560,20 @@ fieldset {
 #submit:disabled {
   background-color: #f4f1f0;
   color: #5b5957;
+}
+
+footer {
+  border-top: 1px solid #dfe1e6;
+  padding-top: 2vh;
+}
+
+.socials_footer {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+}
+
+.social-icon-footer {
+  margin: 0 2vw;
 }
