@@ -17,6 +17,11 @@ header {
   align-items: center;
 }
 
+input
+textarea {
+  outline: none;
+}
+
 .nav-links {
   display: none;
 }
