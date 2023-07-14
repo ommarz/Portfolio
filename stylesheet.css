@@ -450,3 +450,138 @@ header {
 .skill {
   margin-bottom: 2vh;
 }
+
+.contact_me {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  max-width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 10vh;
+}
+
+.contact_me_intro {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 85vw;
+  color: #172b40;
+  padding-top: 10vh;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.75rem;
+}
+
+fieldset {
+  border: none;
+}
+
+.personal_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#name {
+  border: none;
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 2rem;
+  width: 85vw;
+  height: 3rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #979493;
+}
+
+#name:active {
+  border: none;
+}
+
+#email {
+  border: none;
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 2rem;
+  width: 85vw;
+  height: 3rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #979493;
+}
+
+#message {
+  background-color: #fbf8f7;
+  width: 85vw;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9375rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #3c3a39;
+}
+
+#submit {
+  display: flex;
+  flex-direction: column;
+  margin: 2vh 0 0 0;
+  align-items: center;
+  padding: 0.75rem;
+  gap: 0.625rem;
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.03188rem;
+}
+
+#submit:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+#submit:active {
+  background-color: #ff6b00;
+  color: #fff;
+}
+
+#submit:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+footer {
+  border-top: 1px solid #dfe1e6;
+  padding-top: 2vh;
+}
+
+.socials_footer {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+}
+
+.social-icon-footer {
+  margin: 0 2vw;
+}
+
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
