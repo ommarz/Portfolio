@@ -485,6 +485,20 @@ fieldset {
   align-items: center;
 }
 
+#name {
+  border: none;
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 2rem;
+  width: 85vw;
+  height: 3rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #979493;
+}
+
 #name:active {
   border: none;
 }
@@ -512,6 +526,7 @@ fieldset {
   font-weight: 400;
   line-height: 1.5rem;
   color: #3c3a39;
+  border: none;
 }
 
 #submit {
