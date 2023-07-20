@@ -450,3 +450,31 @@ header {
 .skill {
   margin-bottom: 2vh;
 }
+
+.contact_me {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  max-width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 10vh;
+}
+
+.contact_me_intro {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 85vw;
+  color: #172b40;
+  padding-top: 10vh;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.75rem;
+}
+
+fieldset {
+  border: none;
+}
