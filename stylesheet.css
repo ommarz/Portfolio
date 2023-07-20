@@ -547,3 +547,27 @@ fieldset {
   background-color: #F4F1F0;
   color: #5B5957;
 }
+
+footer {
+  border-top: 1px solid #dfe1e6;
+  padding-top: 2vh;
+}
+
+.socials_footer {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+}
+
+.social-icon-footer {
+  margin: 0 2vw;
+}
+
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
