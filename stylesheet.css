@@ -245,8 +245,12 @@ header {
   justify-self: center;
   width: 85vw;
   min-height: 40vh;
-  margin: 0;
+  margin: 0 0 2vh 0;
   background: linear-gradient(181deg, rgba(38, 38, 38, 0) 0.34%, rgba(38, 38, 38, 0.9) 61.21%), url('./images/background/professional_printing_background.svg'), lightgray 50% / cover no-repeat;
+}
+
+.card6 {
+  margin: 0;
 }
 
 .card_title {
