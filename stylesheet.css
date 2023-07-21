@@ -408,19 +408,24 @@ header {
   color: #fff;
 }
 
+.about_me_skills {
+  display: flex;
+  width: 85vw;
+  align-self: center;
+  flex-direction: column;
+}
+
 .about_me_tools_list {
   display: flex;
   flex-direction: column;
   max-width: 85vw;
   padding: 0;
   margin: 15vh 0 10vh 0;
-  align-self: center;
   color: #fff;
   align-items: center;
 }
 
 .about_me_tool {
-  text-align: center;
   font-family: 'Inter', sans-serif;
   font-size: 2rem;
   font-style: normal;
@@ -440,9 +445,16 @@ header {
   padding-left: 5vw;
 }
 
+.skills_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .Skills {
   list-style-image: url('./images/icons/Rectangle\ 57.svg');
   padding-left: 3vw;
+  width: fit-content;
 }
 
 .unit_tool_list {
