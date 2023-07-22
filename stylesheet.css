@@ -1113,11 +1113,11 @@ textarea {
     justify-content: flex-start;
   }
 
-  #name {
+  #full_name {
     border: none;
     border-bottom: 1px solid #dbdbdb;
     margin-bottom: 2rem;
-    width: 23vw;
+    width: 50vw;
     height: 3rem;
     font-family: 'Inter', sans-serif;
     font-size: 0.9375rem;
@@ -1125,21 +1125,6 @@ textarea {
     font-weight: 400;
     line-height: 1.5rem;
     color: #979493;
-  }
-
-  #last_name {
-    border: none;
-    border-bottom: 1px solid #dbdbdb;
-    margin-bottom: 2rem;
-    width: 23vw;
-    height: 3rem;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.9375rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5rem;
-    color: #979493;
-    margin-left: 3.5vw;
   }
 
   #email {
