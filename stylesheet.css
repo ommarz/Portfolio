@@ -854,7 +854,7 @@ textarea {
     display: flex;
     flex-direction: column;
     width: 26vw;
-    height: 35vh;
+    height: 50vh;
     margin-bottom: 2vh;
     padding: 0;
     align-items: flex-start;
@@ -972,7 +972,7 @@ textarea {
     justify-content: flex-start;
     background-image: url('./images/background/about_me_background_desktop.svg');
     background-repeat: no-repeat;
-    background-position: 100% 20%;
+    background-position: 100% 15%;
     background-size: 50vw;
     align-items: flex-start;
   }
