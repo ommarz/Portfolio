@@ -217,11 +217,12 @@ header {
 .see_project_main:hover {
   background-color: #fff5e1;
   color: #ff6b00;
+  border: 1px solid #f55800;
 }
 
 .see_project_main:active {
-  background-color: #ff6b00;
-  color: #fff;
+  background-color: #e05304;
+  color: #f4f1f0;
 }
 
 .see_project_main:disabled {
@@ -310,6 +311,7 @@ header {
 .see_project_card:hover {
   background-color: #fff5e1;
   color: #ff6b00;
+  border: 1px solid #f55800;
 }
 
 .see_project_card:disabled {
@@ -318,8 +320,8 @@ header {
 }
 
 .see_project_card:active {
-  background-color: #ff6b00;
-  color: #fff;
+  background-color: #e05304;
+  color: #f4f1f0;
 }
 
 .about_me {
@@ -387,11 +389,12 @@ header {
 .about_me_button:hover {
   background-color: #fff5e1;
   color: #ff6b00;
+  border: 1px solid #f55800;
 }
 
 .about_me_button:active {
-  background-color: #ff6b00;
-  color: #fff;
+  background-color: #e05304;
+  color: #f4f1f0;
 }
 
 .about_me_button:disabled {
@@ -583,11 +586,12 @@ fieldset {
 #submit:hover {
   background-color: #fff5e1;
   color: #ff6b00;
+  border: 1px solid #f55800;
 }
 
 #submit:active {
-  background-color: #ff6b00;
-  color: #fff;
+  background-color: #e05304;
+  color: #f4f1f0;
 }
 
 #submit:disabled {
