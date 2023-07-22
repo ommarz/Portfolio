@@ -562,6 +562,7 @@ fieldset {
   font-weight: 400;
   line-height: 1.5rem;
   color: #3c3a39;
+  border: none;
 }
 
 #submit {
@@ -622,6 +623,13 @@ input {
 
 textarea {
   outline: none;
+}
+.project_image {
+  transition: transform 0.3s ease; /* smooth transition effect */
+}
+
+.project_image:hover {
+  transform: scale(1.05); /* increase image size by 10% */
 }
 
 .desktop {
@@ -1171,6 +1179,5 @@ textarea {
 
   .social-icon-footer {
     margin: 0;
-
   }
 }
