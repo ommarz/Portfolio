@@ -719,7 +719,7 @@ textarea {
     display: flex;
     order: 1;
     max-width: fit-content;
-    padding-left: 5vw;
+    padding-left: 0;
   }
 
   .greeting {
