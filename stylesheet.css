@@ -872,6 +872,7 @@ textarea {
   }
 
   .card_title {
+    display: flex;
     font-family: 'Crete Round', serif;
     font-size: 3vh;
     font-style: normal;
@@ -881,48 +882,13 @@ textarea {
   }
 
   .card_description {
+    display: flex;
     font-family: 'Inter', sans-serif;
     font-size: 1.8vh;
     font-style: normal;
     font-weight: 400;
     line-height: 2vh;
     margin: 1vh 2vw 1vh 2vw;
-  }
-
-  #card1 {
-    background-image: url('./images/background/Card1_background.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  #card1:hover {
-    cursor: pointer;
-  }
-
-  #card1_title {
-    display: none;
-  }
-
-  #card1_description {
-    display: none;
-  }
-
-  #tools_list_card1 {
-    display: none;
-  }
-
-  #tools_card1 {
-    display: none;
-  }
-
-  #see_project_card1 {
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.0625rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.5rem;
-    letter-spacing: 0.03188rem;
   }
 
   .tools_list_card {
@@ -947,30 +913,70 @@ textarea {
     line-height: 3vh;
   }
 
+  .tools_card {
+    display: none;
+  }
+
+  .see_project_card {
+    display: none;
+  }
+
+  .project_card:hover {
+    cursor: pointer;
+  }
+
+  .project_card:hover .card_title {
+    display: none;
+  }
+
+  .project_card:hover .card_description {
+    display: none;
+  }
+
+  .project_card:hover .tools_list_card {
+    display: none;
+  }
+
+  .project_card:hover .see_project_card {
+    display: flex;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: 0.03188rem;
+  }
+
+  .card1 {
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./images/background/Card1_background.svg");
+    background-size: cover;
+  }
+
+  .card1:hover {
+    background-image: url('./images/background/Card1_background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .card2 {
-    background-image: url('./images/background/Card2_background.svg');
-    background-repeat: no-repeat;
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./images/background/Project-background2.png");
     background-size: cover;
   }
 
-  .card5 {
-    background-image: url('./images/background/Card2_background.svg');
+  .card2:hover {
+    background-image: url('./images/background/Project-background2.png');
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  .card4 {
-    background: linear-gradient(181deg, rgba(38, 38, 38, 0) 0.34%, rgba(38, 38, 38, 0.9) 83.33%), url('./images/background/Card1_background.svg') lightgray 50% / cover no-repeat;
   }
 
   .card3 {
-    background-image: url('./images/background/Card3_background.svg');
-    background-repeat: no-repeat;
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./images/background/Project-background3.png");
     background-size: cover;
   }
 
-  .card6 {
-    background-image: url('./images/background/Card3_background.svg');
+  .card3:hover {
+    background-image: url('./images/background/Project-background3.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
