@@ -7,6 +7,7 @@
 
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -41,12 +42,14 @@
   </ul>
 </details>
 
+
 <details>
   <summary>Server</summary>
   <ul>
     <li><a href=></a></li>
   </ul>
 </details>
+
 
 <details>
 <summary>Database</summary>
@@ -55,17 +58,23 @@
   </ul>
 </details>
 
+
 <!-- Features -->
 
 ### Key Features
 
-- **[Toolbar]**
-- **[Headline_Section]**
-- **[Images]**
+- **[Form]**
+- **[Animation]**
+- **[Buttons]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
+### 🚀 Live Demo
+
+[https://ommarz.github.io/Portfolio/#]()
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started
 
@@ -140,9 +149,9 @@ You can deploy this project using:
 
 ## 🔭 Future Features
 
-- **[Toolbar]**
-- **[My_Recent_Works]**
-- **[About_Me]**
+- **[Project links]**
+- **[Resume link]**
+- **[Animations]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
