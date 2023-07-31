@@ -563,6 +563,7 @@ fieldset {
   line-height: 1.5rem;
   color: #3c3a39;
   border: none;
+  padding: 2vh 1.5vw 2vh 1.5vw;
 }
 
 #submit {
