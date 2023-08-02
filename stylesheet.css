@@ -1102,6 +1102,7 @@ textarea {
     flex-direction: row;
     justify-content: space-between;
     min-height: 40vh;
+    height: 60vh;
   }
 
   .contact_me_intro {
