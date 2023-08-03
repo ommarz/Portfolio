@@ -1,19 +1,18 @@
 function myFunction() {
-  let burger = document.querySelector('.hamburger');
-  let body = document.querySelector('body');
-  let navLi = document.querySelectorAll('.nav-li');
-  let close = document.querySelector('.close');
-  let logo = document.querySelector('.logo');
-  let toolbar = document.querySelector('.toolbar');
-  let navToolbar = document.querySelector('.nav_toolbar');
-  let navUl = document.querySelector('.nav-links');
+  const burger = document.querySelector('.hamburger');
+  const body = document.querySelector('body');
+  const navLi = document.querySelectorAll('.nav-li');
+  const close = document.querySelector('.close');
+  const logo = document.querySelector('.logo');
+  const toolbar = document.querySelector('.toolbar');
+  const navToolbar = document.querySelector('.nav_toolbar');
+  const navUl = document.querySelector('.nav-links');
 
   burger.addEventListener('click', () => {
-
     navLi.forEach(link => link.classList.toggle('nav-li-navigation'));
     body.classList.toggle('body-navigation');
     toolbar.classList.toggle('toolbar-navigation');
-    navUl.classList.add('nav-links-navigation')
+    navUl.classList.add('nav-links-navigation');
     navUl.classList.remove('nav-links');
     burger.classList.add('hamburger-navigation');
     burger.classList.remove('hamburger');
@@ -29,7 +28,7 @@ function myFunction() {
     navLi.forEach(link => link.classList.toggle('nav-li-navigation'));
     body.classList.toggle('body-navigation');
     toolbar.classList.toggle('toolbar-navigation');
-    navUl.classList.remove('nav-links-navigation')
+    navUl.classList.remove('nav-links-navigation');
     navUl.classList.add('nav-links');
     burger.classList.remove('hamburger-navigation');
     burger.classList.add('hamburger');
