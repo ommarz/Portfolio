@@ -9,7 +9,7 @@ function myFunction() {
   const navUl = document.querySelector('.nav-links');
 
   burger.addEventListener('click', () => {
-    navLi.forEach(link, () => link.classList.toggle('nav-li-navigation'));
+    navLi.forEach(link => link.classList.toggle('nav-li-navigation'));
     body.classList.toggle('body-navigation');
     toolbar.classList.toggle('toolbar-navigation');
     navUl.classList.add('nav-links-navigation');
@@ -25,7 +25,7 @@ function myFunction() {
   });
 
   close.addEventListener('click', () => {
-    navLi.forEach(link, () => link.classList.toggle('nav-li-navigation'));
+    navLi.forEach(link => link.classList.toggle('nav-li-navigation'));
     body.classList.toggle('body-navigation');
     toolbar.classList.toggle('toolbar-navigation');
     navUl.classList.remove('nav-links-navigation');
