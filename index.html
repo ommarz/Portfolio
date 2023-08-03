@@ -15,15 +15,16 @@
 </head>
 
 <body>
-  <header class="toolbar">
-    <a class="logo">My Logo</a>
-    <nav class="nav_toolbar">
+  <header class="toolbar" id="header">
+    <a class="logo" href="#header" target="_self" alt="logo">My Logo</a>
+    <nav class="nav_toolbar" id="nav_toolbar">
       <img src="./images/icons/Menu_icon.svg " alt="menu" class="hamburger">
+      <img src="./images/icons/Close_Window_icon.svg" alt="close" class="close">
       <ul class="nav-links">
         <li><a href="#works" target="_self" class="nav-li">Portfolio</a></li>
         <li><a href="#about_me" target="_self" class="nav-li">About</a></li>
         <li><a href="#contact_me" target="_self" class="nav-li">Contact</a></li>
-        <li><a href="#" target="_self" class="nav-li"><img src="./images/icons/Mail-icon.svg" alt="mail" class="mail_icon"></a></li>
+        <li><a href="#" target="_self" class="nav-li mail desktop"><img src="./images/icons/Mail-icon.svg" alt="mail" class="mail_icon"></a></li>
       </ul>
     </nav>
   </header>
@@ -47,7 +48,7 @@
             class="social-icon"></img></a></li>
     </ul>
   </section>
-  <section class="works">
+  <section class="works" id="works">
     <div class="works_intro">
       <h2 class="recent_works">My Recent Works</h2>
       <hr class="recent_works_break">
@@ -141,7 +142,7 @@
       </div>
     </div>
   </section>
-  <section class="about_me">
+  <section class="about_me" id="about_me">
     <div class="about_me_intro">
       <h2 class="about_me_title">About me</h2>
       <p class="about_me_description">Hello I'm a software developer! I can help you build a product , feature or
@@ -184,7 +185,7 @@
       </ul>
     </div>
   </section>
-  <section class="contact_me">
+  <section class="contact_me" id="contact_me">
     <h2 class="contact_me_intro">
       I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
     </h2>
@@ -213,4 +214,5 @@
             class="social-icon-footer"></img></a></li>
     </ul>
   </footer>
+  <script src="./script.js"></script>
 </body>
