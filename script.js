@@ -60,7 +60,6 @@ function myFunction() {
 }
 
 myFunction();
-
 //POP UP CARDS PROJECT
 
   //Create array of projects
@@ -207,8 +206,6 @@ myFunction();
     sourceButton.classList.add('source-button');
     sourceButton.setAttribute =('href', popUpProjects[i].seeSource);
     popUpButtons.appendChild(sourceButton);
-
-    console.log("card " + i + " created: " + popUpProjects[i].name);
   }
 
   // Function to create the project cards
@@ -298,6 +295,11 @@ myFunction();
       createProjectCard(index);
 
       const popUpCard = document.querySelectorAll('.popUpCard')[index];
-      console.log(popUpCard.classList);
-      popUpCard.style.display = 'block';
+      popUpCard.style.display = 'flex';
     });
+  }
+  );
+});
+
+
+// POP UP CARDS PROJECT ENDS HERE
