@@ -289,8 +289,7 @@ myFunction();
   const seeProjectLinks = document.querySelectorAll('.see_project_card');
 
   seeProjectLinks.forEach((link) => {
-    link.addEventListener('click', (event) => {
-      event.preventDefault();
+    link.addEventListener('click', () => {
       const index = link.getAttribute('data-index');
       createProjectCard(index);
 
