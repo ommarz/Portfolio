@@ -60,6 +60,18 @@ function myFunction() {
 }
 
 myFunction();
+
+//Form Validation
+
+const email = document.querySelector('#email');
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (event) => {
+  if (email.value !== emailInput.value.toLowerCase()) {
+    event.preventDefault();
+    alert('Email must be lowercase');
+  }
+});
 //POP UP CARDS PROJECT
 
   //Create array of projects
