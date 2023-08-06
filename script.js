@@ -61,7 +61,6 @@ function myFunction() {
 
 myFunction();
 
-//Form Validation
 
 const email = document.querySelector('#email');
 const form = document.querySelector('.form');
@@ -73,9 +72,9 @@ if (email.value !== email.value.toLowerCase()) {
   event.preventDefault();
 });
 
-//POP UP CARDS PROJECT
+//POP UP CARDS PROJECT//
 
-//Create array of projects
+//Create array of projects//
 
 const popUpProjects = [
   {
@@ -143,11 +142,12 @@ const popUpProjects = [
 ]
 
 for (let i = 0; i < popUpProjects.length; i++) {
-  // Select the projects div
+  
+  // Select the projects div//
     
   const worksDiv = document.querySelector('.works');  
     
-  // Create the project card
+  // Create the project card//
   
   const popUpCard = document.createElement('div');
   popUpCard.setAttribute = ('id','popup-card');
@@ -158,20 +158,20 @@ for (let i = 0; i < popUpProjects.length; i++) {
   popUpCardContent.classList.add('popUpCardContent');
   popUpCard.appendChild(popUpCardContent);
 
-  // Create the project card header
+  // Create the project card header//
   
   const popUpHeader = document.createElement('div');
   popUpHeader.classList.add('popUpHeader');
   popUpCardContent.appendChild(popUpHeader);
 
-  // Create the project card header title
+  // Create the project card header title//
   
   const popUpTitle = document.createElement('h3');
   popUpTitle.classList.add('popUpTitle');
   popUpTitle.textContent = popUpProjects[i].name;  
   popUpHeader.appendChild(popUpTitle);
 
-  // Create the project card header close button
+  // Create the project card header close button//
   
   const popUpClose = document.createElement('img');
   popUpClose.classList.add('popUpClose');
@@ -179,13 +179,13 @@ for (let i = 0; i < popUpProjects.length; i++) {
   popUpClose.setAttribute('alt', 'Close Window icon');
   popUpHeader.appendChild(popUpClose);
 
-  //Create the project tools used list
+  //Create the project tools used list//
  
   const popUpToolsUsedList = document.createElement('ul');
   popUpToolsUsedList.classList.add('popUp-ToolsUsed-list');
   popUpHeader.appendChild(popUpToolsUsedList);
 
-  // Create the project card tools used elements
+  // Create the project card tools used elements//
   
   for(let j = 0; j < popUpProjects[j].toolsUsed.length; j++){
     const popUpToolsUsedElement = document.createElement('li');
@@ -194,13 +194,13 @@ for (let i = 0; i < popUpProjects.length; i++) {
     popUpToolsUsedList.appendChild(popUpToolsUsedElement);
   }
 
-  // Create the project card body
+  // Create the project card body //
   
   const popUpBody = document.createElement('div');
   popUpBody.classList.add('popUpBody');
   popUpCardContent.appendChild(popUpBody);
   
-  // Create the project card body image
+  // Create the project card body image //
   
   const popUpImage = document.createElement('img');
   popUpImage.classList.add('popup-image');
@@ -208,20 +208,20 @@ for (let i = 0; i < popUpProjects.length; i++) {
   popUpImage.setAttribute('alt', popUpProjects[i].name);
   popUpBody.appendChild(popUpImage);
 
-  // Create the project card body description
+  // Create the project card body description //
   
   const popUpDescription = document.createElement('p');
   popUpDescription.classList.add('popup-description');
   popUpDescription.textContent = popUpProjects[i].description;
   popUpBody.appendChild(popUpDescription);
 
-  // Create the project card body buttons
+  // Create the project card body buttons //
   
   const popUpButtons = document.createElement('div');
   popUpButtons.classList.add('popUp-buttons');
   popUpBody.appendChild(popUpButtons);
 
-  // Create the project card body buttons live button
+  // Create the project card body buttons live button //
   
   const liveButton = document.createElement('a');
   liveButton.classList.add('live-button');
@@ -235,7 +235,7 @@ for (let i = 0; i < popUpProjects.length; i++) {
   liveButtonIcon.setAttribute('src', './images/icons/See_live_icon.svg');
   liveButton.appendChild(liveButtonIcon);
 
-  // Create the project card body buttons source button
+  // Create the project card body buttons source button //
   
   const sourceButton = document.createElement('a');
   sourceButton.classList.add('source-button');
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }); 
   });
 
-  // close the pop up card when clicking popupClose:
+  // close the pop up card when clicking popupClose:    //
   
   worksDiv.addEventListener('click', (event) => {
     const popUpClose = event.target.closest('.popUpClose');
@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
 });
 
-// Function to create the project cards
+// Function to create the project cards //
 
 function createProjectCard(index) {
   const project = popUpProjects[index];
@@ -365,10 +365,4 @@ function closePopUpCard(popUpCard) {
 popUpCard.style.display = 'none';
 }
 
-
-
-
-
-
-
-// POP UP CARDS PROJECT ENDS HERE
+// POP UP CARDS PROJECT ENDS HERE //
