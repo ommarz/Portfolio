@@ -115,14 +115,14 @@ const popUpProjects = [
   {
     name: 'Professional Art',
     toolsUsed: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-    image: ''./images/content/Snapshoot_Portfolio.svg',
+    image: './images/content/Snapshoot_Portfolio.svg',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since',
     seeLive: '#',
     seeSource: '#'
   },
 
   {
-      name: 'Data Dashboard',
+    name: 'Data Dashboard',
     toolsUsed: ['HTML', 'Bootstrap', 'Ruby on Rails'],
     image: './images/content/Snapshoot_Portfolio.svg',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since',
@@ -142,11 +142,11 @@ const popUpProjects = [
 
 for (let i = 0; i < popUpProjects.length; i++) {
   
-  // Select the projects div//
+  // Select the projects div //
     
   const worksDiv = document.querySelector('.works');  
     
-  // Create the project card//
+  // Create the project card //
   
   const popUpCard = document.createElement('div');
   popUpCard.setAttribute = ('id','popup-card');
@@ -157,20 +157,20 @@ for (let i = 0; i < popUpProjects.length; i++) {
   popUpCardContent.classList.add('popUpCardContent');
   popUpCard.appendChild(popUpCardContent);
 
-  // Create the project card header//
+  // Create the project card header //
   
   const popUpHeader = document.createElement('div');
   popUpHeader.classList.add('popUpHeader');
   popUpCardContent.appendChild(popUpHeader);
 
-  // Create the project card header title//
+  // Create the project card header title //
   
   const popUpTitle = document.createElement('h3');
   popUpTitle.classList.add('popUpTitle');
   popUpTitle.textContent = popUpProjects[i].name;  
   popUpHeader.appendChild(popUpTitle);
 
-  // Create the project card header close button//
+  // Create the project card header close button //
   
   const popUpClose = document.createElement('img');
   popUpClose.classList.add('popUpClose');
@@ -178,13 +178,13 @@ for (let i = 0; i < popUpProjects.length; i++) {
   popUpClose.setAttribute('alt', 'Close Window icon');
   popUpHeader.appendChild(popUpClose);
 
-  //Create the project tools used list//
+  //Create the project tools used list //
  
   const popUpToolsUsedList = document.createElement('ul');
   popUpToolsUsedList.classList.add('popUp-ToolsUsed-list');
   popUpHeader.appendChild(popUpToolsUsedList);
 
-  // Create the project card tools used elements//
+  // Create the project card tools used elements //
   
   for(let j = 0; j < popUpProjects[j].toolsUsed.length; j++){
     const popUpToolsUsedElement = document.createElement('li');
