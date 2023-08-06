@@ -68,7 +68,7 @@ myFunction();
     {
       name: "Multi-Post Stories",
       toolsUsed: ["HTML", "CSS", "JavaScript"],
-      image: "images/content/Snapshoot_Portfolio.svg",
+      image: "./images/content/Snapshoot_Portfolio.svg",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
       seeLive: "#",
       seeSource: "#"
@@ -77,7 +77,7 @@ myFunction();
     {
       name: "Keeping track of hundreds of components website",
       toolsUsed: ["HTML", "Bootstrap", "Ruby on Rails"],
-      image: "images/content/Snapshoot_Portfolio.svg",
+      image: './images/content/Snapshoot_Portfolio.svg',
       description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500"],
       seeLive: '#',
       seeSource: '#'
@@ -86,7 +86,7 @@ myFunction();
     {
       name: "Data Dashboard",
       toolsUsed: ["HTML", "Bootstrap", "Ruby"],
-      image: "images/content/Snapshoot_Portfolio.svg",
+      image: "./images/content/Snapshoot_Portfolio.svg",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
       seeLive: '#',
       seeSource: '#'
@@ -95,7 +95,7 @@ myFunction();
     {
       name: "Website Portfolio",
       toolsUsed: ["HTML", "Bootstrap", "Ruby"],
-      image: "images/content/Snapshoot_Portfolio.svg",
+      image: "./images/content/Snapshoot_Portfolio.svg",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
       seeLive: '#',
       seeSource: '#'
@@ -104,7 +104,7 @@ myFunction();
     {
       name: "Professional Art",
       toolsUsed: ["HTML", "Bootstrap", "Ruby"],
-      image: "images/content/Snapshoot_Portfolio.svg",
+      image: "./images/content/Snapshoot_Portfolio.svg",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
       seeLive: '#',
       seeSource: '#'
@@ -113,7 +113,7 @@ myFunction();
     {
         name: "Data Dashboard",
       toolsUsed: ["HTML", "Bootstrap", "Ruby"],
-      image: "images/content/Snapshoot_Portfolio.svg",
+      image: "./images/content/Snapshoot_Portfolio.svg",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
       seeLive: '#',
       seeSource: '#'
@@ -122,7 +122,7 @@ myFunction();
     {
       name: "Website Portfolio",
       toolsUsed: ["HTML", "Bootstrap", "Ruby"],
-      image: "images/content/Snapshoot_Portfolio.svg",
+      image: "./images/content/Snapshoot_Portfolio.svg",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
       seeLive: '#',
       seeSource: '#'
@@ -132,19 +132,23 @@ myFunction();
   for (let i = 0; i < popUpProjects.length; i++) {
     // Select the projects div
       
-    const projectsDiv = document.querySelector('.projects');  
+    const worksDiv = document.querySelector('.works');  
       
     // Create the project card
     
     const popUpCard = document.createElement('div');
     popUpCard.setAttribute = ('id','popup-card');
     popUpCard.classList.add('popUpCard');
-    projectsDiv.appendChild(popUpCard);
+    worksDiv.appendChild(popUpCard);
+
+    const popUpCardContent = document.createElement('div');
+    popUpCardContent.classList.add('popUpCardContent');
+    popUpCard.appendChild(popUpCardContent);
   
     // Create the project card header
     const popUpHeader = document.createElement('div');
     popUpHeader.classList.add('popUpHeader');
-    popUpCard.appendChild(popUpHeader);
+    popUpCardContent.appendChild(popUpHeader);
 
     // Create the project card header title
     const popUpTitle = document.createElement('h3');
@@ -155,7 +159,8 @@ myFunction();
     // Create the project card header close button
     const popUpClose = document.createElement('img');
     popUpClose.classList.add('popUpClose');
-    popUpClose.setAttribute = ('src', 'images/icons/Close_Window_icon.svg');
+    popUpClose.setAttribute('src', './images/icons/Close_Window_icon.svg');
+    popUpClose.setAttribute('alt', 'Close Window icon');
     popUpHeader.appendChild(popUpClose);
 
     //Create the project tools used list
@@ -175,13 +180,13 @@ myFunction();
     // Create the project card body
     const popUpBody = document.createElement('div');
     popUpBody.classList.add('popUpBody');
-    popUpCard.appendChild(popUpBody);
+    popUpCardContent.appendChild(popUpBody);
     
     // Create the project card body image
     const popUpImage = document.createElement('img');
     popUpImage.classList.add('popup-image');
-    popUpImage.setAttribute =('src', popUpProjects[i].image);
-    popUpImage.setAttribute =('alt', popUpProjects[i].name);
+    popUpImage.setAttribute('src', popUpProjects[i].image);
+    popUpImage.setAttribute('alt', popUpProjects[i].name);
     popUpBody.appendChild(popUpImage);
 
     // Create the project card body description
@@ -198,28 +203,76 @@ myFunction();
     // Create the project card body buttons live button
     const liveButton = document.createElement('a');
     liveButton.classList.add('live-button');
-    liveButton.setAttribute = ('href', popUpProjects[i].seeLive);
+    liveButton.textContent = 'See Live';
+    liveButton.setAttribute('href', popUpProjects.seeLive);
+    liveButton.setAttribute('target', '_blank');
     popUpButtons.appendChild(liveButton);
+
+    const liveButtonIcon = document.createElement('img');
+    liveButtonIcon.classList.add('live-button-icon');
+    liveButtonIcon.setAttribute('src', './images/icons/See_live_icon.svg');
+    liveButton.appendChild(liveButtonIcon);
 
     // Create the project card body buttons source button
     const sourceButton = document.createElement('a');
     sourceButton.classList.add('source-button');
-    sourceButton.setAttribute =('href', popUpProjects[i].seeSource);
+    sourceButton.setAttribute('href', popUpProjects[i].seeSource);
+    sourceButton.setAttribute('target', '_blank');
+    sourceButton.textContent = 'See Source';
     popUpButtons.appendChild(sourceButton);
+
+    const sourceButtonIcon = document.createElement('img');
+    sourceButtonIcon.classList.add('source-button-icon');
+    sourceButtonIcon.setAttribute('src', './images/icons/See_resource_icon.svg');
+    sourceButton.appendChild(sourceButtonIcon);
+
   }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const worksDiv = document.querySelector('.works');
+    const seeProjectLinks = document.querySelectorAll('.see_project_card');
+    
+    seeProjectLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        const index = link.getAttribute('data-index');
+        createProjectCard(index);
+        const popUpCard = document.querySelectorAll('.popUpCard')[index];
+        const linkPosition = link.getBoundingClientRect();
+        popUpCard.style.left = linkPosition.left + 'px';
+        popUpCard.style.top = linkPosition.top - popUpCard.offsetHeight - 10 + 'px';    
+        popUpCard.style.display = 'flex';
+      }); 
+    });
+  
+    // close the pop up card when clicking popupClose:
+    
+    worksDiv.addEventListener('click', (event) => {
+      const popUpClose = event.target.closest('.popUpClose');
+      if (popUpClose) {
+        const popUpCard = popUpClose.closest('.popUpCard');
+        closePopUpCard(popUpCard);
+      }
+    });
+    
+  });
 
   // Function to create the project cards
 
  function createProjectCard(index) {
   const project = popUpProjects[index];
 
+
   const popUpCard = document.createElement('div');  
   popUpCard.id = 'popup-card';
   popUpCard.classList.add('popUpCard');
 
+  const popUpCardContent = document.createElement('div');
+  popUpCardContent.classList.add('popUpCardContent');
+  popUpCard.appendChild(popUpCardContent);
+
   const popUpHeader = document.createElement('div');
   popUpHeader.classList.add('popUpHeader');
-  popUpCard.appendChild(popUpHeader);
+  popUpCardContent.appendChild(popUpHeader);
 
   const popUpTitle = document.createElement('h3');
   popUpTitle.classList.add('popUpTitle');
@@ -228,7 +281,7 @@ myFunction();
 
   const popUpClose = document.createElement('img');
   popUpClose.classList.add('popUpClose');
-  popUpClose.setAttribute =('src', 'images/icons/Close_Window_icon.svg');
+  popUpClose.setAttribute('src', './images/icons/Close_Window_icon.svg');
   popUpHeader.appendChild(popUpClose);
 
   const popUpToolsUsedList = document.createElement('ul');
@@ -244,11 +297,11 @@ myFunction();
 
   const popUpBody = document.createElement('div');
   popUpBody.classList.add('popUpBody');
-  popUpCard.appendChild(popUpBody);
+  popUpCardContent.appendChild(popUpBody);
   
   const popUpImage = document.createElement('img');
   popUpImage.classList.add('popup-image');
-  popUpImage.setAttribute = ('src', project.image);
+  popUpImage.setAttribute('src', project.image);
   popUpBody.appendChild(popUpImage);
     
   const popUpDescription = document.createElement('p');
@@ -262,12 +315,12 @@ myFunction();
     
   const liveButton = document.createElement('a');
   liveButton.classList.add('live-button');
-  liveButton.setAttribute = ('href', project.seeLive);
+  liveButton.setAttribute('href', project.seeLive);
   popUpButtons.appendChild(liveButton);
 
   const sourceButton = document.createElement('a');
   sourceButton.classList.add('source-button');
-  sourceButton.setAttribute = ('href', project.seeSource);
+  sourceButton.setAttribute('href', project.seeSource);
   popUpButtons.appendChild(sourceButton);
 
   popUpClose.addEventListener('click', () => {
@@ -282,23 +335,17 @@ myFunction();
     window.open(project.seeSource);
   });
   
-  document.body.appendChild(popUpCard);
+  
  }
  
- document.addEventListener('DOMContentLoaded', () => {
-  const seeProjectLinks = document.querySelectorAll('.see_project_card');
+ function closePopUpCard(popUpCard) {
+  popUpCard.style.display = 'none';
+}
 
-  seeProjectLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      const index = link.getAttribute('data-index');
-      createProjectCard(index);
 
-      const popUpCard = document.querySelectorAll('.popUpCard')[index];
-      popUpCard.style.display = 'flex';
-    });
-  }
-  );
-});
+
+
+
 
 
 // POP UP CARDS PROJECT ENDS HERE
