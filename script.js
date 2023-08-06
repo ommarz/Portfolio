@@ -64,14 +64,15 @@ myFunction();
 //Form Validation
 
 const email = document.querySelector('#email');
-const form = document.querySelector('form');
+const form = document.querySelector('.form');
 
 form.addEventListener('submit', (event) => {
-  if (email.value !== emailInput.value.toLowerCase()) {
-    event.preventDefault();
+  if (email.value !== email.value.toLowerCase()) {
     alert('Email must be lowercase');
   }
+   event.preventDefault();
 });
+
 //POP UP CARDS PROJECT
 
   //Create array of projects
