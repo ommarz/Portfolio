@@ -61,81 +61,80 @@ function myFunction() {
 
 myFunction();
 
-
 const email = document.querySelector('#email');
 const form = document.querySelector('.form');
 
 form.addEventListener('submit', (event) => {
 if (email.value !== email.value.toLowerCase()) {
-  alert('Email must be lowercase');
-}
+    alert('Email must be lowercase');
+  }
   event.preventDefault();
 });
 
-//POP UP CARDS PROJECT//
+//POP UP CARDS PROJECT //
 
-//Create array of projects//
+//Create array of projects //
 
 const popUpProjects = [
   {
-    name: "Multi-Post Stories",
-    toolsUsed: ["HTML", "CSS", "JavaScript"],
-    image: "./images/content/Snapshoot_Portfolio.svg",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    name: 'Multi-Post Stories',
+    toolsUsed: ['HTML', 'CSS', 'JavaScript'],
+    image: './images/content/Snapshoot_Portfolio.svg',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     seeLive: "#",
-    seeSource: "#"
+    seeSource: '#'
   },
 
   {
-    name: "Keeping track of hundreds of components website",
-    toolsUsed: ["HTML", "Bootstrap", "Ruby on Rails"],
+    name: 'Keeping track of hundreds of components website',
+    toolsUsed: ['HTML', 'Bootstrap', 'Ruby on Rails'],
     image: './images/content/Snapshoot_Portfolio.svg',
-    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500"],
+    description: ['Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500'],
     seeLive: '#',
     seeSource: '#'
   },
 
   {
     name: "Data Dashboard",
-    toolsUsed: ["HTML", "Bootstrap", "Ruby"],
+    toolsUsed: ['HTML', 'Bootstrap', 'Ruby on Rails'],
     image: "./images/content/Snapshoot_Portfolio.svg",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since',
     seeLive: '#',
     seeSource: '#'
   },
 
   {
     name: "Website Portfolio",
-    toolsUsed: ["HTML", "Bootstrap", "Ruby"],
+    toolsUsed: ['HTML', 'Bootstrap', 'Ruby on Rails'],
     image: "./images/content/Snapshoot_Portfolio.svg",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since',
     seeLive: '#',
     seeSource: '#'
   },
 
   {
-    name: "Professional Art",
-    toolsUsed: ["HTML", "Bootstrap", "Ruby"],
-    image: "./images/content/Snapshoot_Portfolio.svg",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+    name: 'Professional Art',
+    toolsUsed: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    image: ''./images/content/Snapshoot_Portfolio.svg',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since',
     seeLive: '#',
     seeSource: '#'
   },
 
   {
-      name: "Data Dashboard",
-    toolsUsed: ["HTML", "Bootstrap", "Ruby"],
-    image: "./images/content/Snapshoot_Portfolio.svg",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+      name: 'Data Dashboard',
+    toolsUsed: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    image: './images/content/Snapshoot_Portfolio.svg',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since',
     seeLive: '#',
     seeSource: '#'
   },
 
   {
     name: "Website Portfolio",
-    toolsUsed: ["HTML", "Bootstrap", "Ruby"],
-    image: "./images/content/Snapshoot_Portfolio.svg",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+    toolsUsed: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    image: './images/content/Snapshoot_Portfolio.svg',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since',
     seeLive: '#',
     seeSource: '#'
   },
