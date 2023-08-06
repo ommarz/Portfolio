@@ -60,6 +60,7 @@ function myFunction() {
 }
 
 myFunction();
+
 //POP UP CARDS PROJECT
 
   //Create array of projects
@@ -130,6 +131,7 @@ myFunction();
   ]
 
   for (let i = 0; i < popUpProjects.length; i++) {
+    
     // Select the projects div
       
     const worksDiv = document.querySelector('.works');  
@@ -146,17 +148,20 @@ myFunction();
     popUpCard.appendChild(popUpCardContent);
   
     // Create the project card header
+    
     const popUpHeader = document.createElement('div');
     popUpHeader.classList.add('popUpHeader');
     popUpCardContent.appendChild(popUpHeader);
 
     // Create the project card header title
+    
     const popUpTitle = document.createElement('h3');
     popUpTitle.classList.add('popUpTitle');
     popUpTitle.textContent = popUpProjects[i].name;  
     popUpHeader.appendChild(popUpTitle);
 
     // Create the project card header close button
+    
     const popUpClose = document.createElement('img');
     popUpClose.classList.add('popUpClose');
     popUpClose.setAttribute('src', './images/icons/Close_Window_icon.svg');
@@ -164,6 +169,7 @@ myFunction();
     popUpHeader.appendChild(popUpClose);
 
     //Create the project tools used list
+    
     const popUpToolsUsedList = document.createElement('ul');
     popUpToolsUsedList.classList.add('popUp-ToolsUsed-list');
     popUpHeader.appendChild(popUpToolsUsedList);
@@ -178,11 +184,13 @@ myFunction();
     }
 
     // Create the project card body
+    
     const popUpBody = document.createElement('div');
     popUpBody.classList.add('popUpBody');
     popUpCardContent.appendChild(popUpBody);
     
     // Create the project card body image
+    
     const popUpImage = document.createElement('img');
     popUpImage.classList.add('popup-image');
     popUpImage.setAttribute('src', popUpProjects[i].image);
@@ -190,17 +198,20 @@ myFunction();
     popUpBody.appendChild(popUpImage);
 
     // Create the project card body description
+    
     const popUpDescription = document.createElement('p');
     popUpDescription.classList.add('popup-description');
     popUpDescription.textContent = popUpProjects[i].description;
     popUpBody.appendChild(popUpDescription);
 
     // Create the project card body buttons
+    
     const popUpButtons = document.createElement('div');
     popUpButtons.classList.add('popUp-buttons');
     popUpBody.appendChild(popUpButtons);
 
     // Create the project card body buttons live button
+    
     const liveButton = document.createElement('a');
     liveButton.classList.add('live-button');
     liveButton.textContent = 'See Live';
@@ -214,6 +225,7 @@ myFunction();
     liveButton.appendChild(liveButtonIcon);
 
     // Create the project card body buttons source button
+    
     const sourceButton = document.createElement('a');
     sourceButton.classList.add('source-button');
     sourceButton.setAttribute('href', popUpProjects[i].seeSource);
@@ -341,11 +353,5 @@ myFunction();
  function closePopUpCard(popUpCard) {
   popUpCard.style.display = 'none';
 }
-
-
-
-
-
-
 
 // POP UP CARDS PROJECT ENDS HERE
