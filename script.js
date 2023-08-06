@@ -282,81 +282,81 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to create the project cards
 
 function createProjectCard(index) {
-const project = popUpProjects[index];
+  const project = popUpProjects[index];
 
 
-const popUpCard = document.createElement('div');  
-popUpCard.id = 'popup-card';
-popUpCard.classList.add('popUpCard');
+  const popUpCard = document.createElement('div');  
+  popUpCard.id = 'popup-card';
+  popUpCard.classList.add('popUpCard');
 
-const popUpCardContent = document.createElement('div');
-popUpCardContent.classList.add('popUpCardContent');
-popUpCard.appendChild(popUpCardContent);
+  const popUpCardContent = document.createElement('div');
+  popUpCardContent.classList.add('popUpCardContent');
+  popUpCard.appendChild(popUpCardContent);
 
-const popUpHeader = document.createElement('div');
-popUpHeader.classList.add('popUpHeader');
-popUpCardContent.appendChild(popUpHeader);
+  const popUpHeader = document.createElement('div');
+  popUpHeader.classList.add('popUpHeader');
+  popUpCardContent.appendChild(popUpHeader);
 
-const popUpTitle = document.createElement('h3');
-popUpTitle.classList.add('popUpTitle');
-popUpTitle.textContent = project.name;
-popUpHeader.appendChild(popUpTitle);
+  const popUpTitle = document.createElement('h3');
+  popUpTitle.classList.add('popUpTitle');
+  popUpTitle.textContent = project.name;
+  popUpHeader.appendChild(popUpTitle);
 
-const popUpClose = document.createElement('img');
-popUpClose.classList.add('popUpClose');
-popUpClose.setAttribute('src', './images/icons/Close_Window_icon.svg');
-popUpHeader.appendChild(popUpClose);
+  const popUpClose = document.createElement('img');
+  popUpClose.classList.add('popUpClose');
+  popUpClose.setAttribute('src', './images/icons/Close_Window_icon.svg');
+  popUpHeader.appendChild(popUpClose);
 
-const popUpToolsUsedList = document.createElement('ul');
-popUpToolsUsedList.classList.add('popUp-ToolsUsed-list');
-popUpHeader.appendChild(popUpToolsUsedList);
+  const popUpToolsUsedList = document.createElement('ul');
+  popUpToolsUsedList.classList.add('popUp-ToolsUsed-list');
+  popUpHeader.appendChild(popUpToolsUsedList);
 
-for(let j = 0; j < project.toolsUsed.length; j++){
-  const popUpToolsUsedElement = document.createElement('li');
-  popUpToolsUsedElement.classList.add('popUp-ToolsUsed-element');
-  popUpToolsUsedElement.innerHTML = project.toolsUsed[j];
-  popUpToolsUsedList.appendChild(popUpToolsUsedElement);
-}
+  for(let j = 0; j < project.toolsUsed.length; j++){
+    const popUpToolsUsedElement = document.createElement('li');
+    popUpToolsUsedElement.classList.add('popUp-ToolsUsed-element');
+    popUpToolsUsedElement.innerHTML = project.toolsUsed[j];
+    popUpToolsUsedList.appendChild(popUpToolsUsedElement);
+  }
 
-const popUpBody = document.createElement('div');
-popUpBody.classList.add('popUpBody');
-popUpCardContent.appendChild(popUpBody);
+  const popUpBody = document.createElement('div');
+  popUpBody.classList.add('popUpBody');
+  popUpCardContent.appendChild(popUpBody);
 
-const popUpImage = document.createElement('img');
-popUpImage.classList.add('popup-image');
-popUpImage.setAttribute('src', project.image);
-popUpBody.appendChild(popUpImage);
-  
-const popUpDescription = document.createElement('p');
-popUpDescription.classList.add('popup-description');
-popUpDescription.textContent = project.description;
-popUpBody.appendChild(popUpDescription);
+  const popUpImage = document.createElement('img');
+  popUpImage.classList.add('popup-image');
+  popUpImage.setAttribute('src', project.image);
+  popUpBody.appendChild(popUpImage);
+    
+  const popUpDescription = document.createElement('p');
+  popUpDescription.classList.add('popup-description');
+  popUpDescription.textContent = project.description;
+  popUpBody.appendChild(popUpDescription);
 
-const popUpButtons = document.createElement('div');
-popUpButtons.classList.add('popUp-buttons');
-popUpBody.appendChild(popUpButtons);
-  
-const liveButton = document.createElement('a');
-liveButton.classList.add('live-button');
-liveButton.setAttribute('href', project.seeLive);
-popUpButtons.appendChild(liveButton);
+  const popUpButtons = document.createElement('div');
+  popUpButtons.classList.add('popUp-buttons');
+  popUpBody.appendChild(popUpButtons);
+    
+  const liveButton = document.createElement('a');
+  liveButton.classList.add('live-button');
+  liveButton.setAttribute('href', project.seeLive);
+  popUpButtons.appendChild(liveButton);
 
-const sourceButton = document.createElement('a');
-sourceButton.classList.add('source-button');
-sourceButton.setAttribute('href', project.seeSource);
-popUpButtons.appendChild(sourceButton);
+  const sourceButton = document.createElement('a');
+  sourceButton.classList.add('source-button');
+  sourceButton.setAttribute('href', project.seeSource);
+  popUpButtons.appendChild(sourceButton);
 
-popUpClose.addEventListener('click', () => {
-  popUpCard.style.display = 'none';
-});
+  popUpClose.addEventListener('click', () => {
+    popUpCard.style.display = 'none';
+  });
 
-liveButton.addEventListener('click', () => {
-  window.open(project.seeLive);
-});
+  liveButton.addEventListener('click', () => {
+    window.open(project.seeLive);
+  });
 
-sourceButton.addEventListener('click', () => {
-  window.open(project.seeSource);
-});
+  sourceButton.addEventListener('click', () => {
+    window.open(project.seeSource);
+  });
 
 
 }
