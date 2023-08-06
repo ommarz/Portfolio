@@ -15,6 +15,8 @@
 </head>
 
 <body>
+<!-- Header -->
+
   <header class="toolbar" id="header">
     <a class="logo" href="#header" target="_self" alt="logo">My Logo</a>
     <nav class="nav_toolbar" id="nav_toolbar">
@@ -28,6 +30,9 @@
       </ul>
     </nav>
   </header>
+
+  <!--- Headline -->
+
   <section class="headline">
     <div class="content">
       <h1 class="greeting">Hey There.<br>I'm Omar.</h1>
@@ -48,11 +53,35 @@
             class="social-icon"></img></a></li>
     </ul>
   </section>
+
+<!--- works -->
+
   <section class="works" id="works">
-    <div class="works_intro">
-      <h2 class="recent_works">My Recent Works</h2>
-      <hr class="recent_works_break">
-    </div>
+   <!-- <div class="popUpCard">
+      <div class="popUpCardContent">
+        <div class="popUpHeader">
+          <h3 class="popUpTitle"></h3>
+          <img class="popUpClose" src="">
+          <ul class="popUpToolsList">
+            <li class="popUpToolsUsedElement"></li>
+            <li class="popUpToolsUsedElement"></li>
+            <li class="popUpToolsUsedElement"></li>
+          </ul>
+        </div>
+        <div class="popUpBody">
+          <img class="popUpImage" src="">
+          <p class="popUpDescription"></p>
+        </div>
+        <div class="popUpButtons">	
+          <a class="liveButton" href="#" target="_blank"><img src="./images/icons/See_live_icon.svg"></a>
+          <a class="sourceButton" href="#" target="_blank"><img src="./images/icons/See_resource_icon.svg"></a>
+        </div>
+        </div>
+      </div> -->
+      <div class="works_intro">
+        <h2 class="recent_works">My Recent Works</h2>
+        <hr class="recent_works_break">
+      </div>
     <div class="main_project">
       <img class="project_image" src="./images/content/project_main.svg" alt="project image">
       <div class="content_project_div">
@@ -66,10 +95,10 @@
           <li class="tool_main">Bootstrap</li>
           <li class="tool_main">Ruby</li>
         </ul>
-        <a href="#" class="see_project_main">See Project</a>
+        <a href="#popup-card" class="see_project_card" id="see_project_main" data-index="0">See Project</a>
       </div>
     </div>
-    <div class="projects">
+    <div class="projects" id="projects">
       <div class="project_card card1" id="card1">
         <h3 class="card_title" id="card1_title">Professional Art<br> Printing Data</h3>
         <p class="card_description" id="card1_description">A daily selection of privately personalized reads; no accounts or sign-ups required.
@@ -79,7 +108,7 @@
           <li class="tool_card" id="tools_card1">Bootstrap</li>
           <li class="tool_card" id="tools_card1">Ruby</li>
         </ul>
-        <a href="#" class="see_project_card" id="see_project_card1">See Project</a>
+        <a href="#popup-card" class="see_project_card" id="see_project_card1" data-index="1">See Project</a>
       </div>
       <div class="project_card card2" id="card_2">
         <h3 class="card_title mobile">Professional Art<br> Printing Data</h3>
@@ -91,7 +120,7 @@
           <li class="tool_card">Bootstrap</li>
           <li class="tool_card">Ruby</li>
         </ul>
-        <a href="#" class="see_project_card">See Project</a>
+        <a href="#popup-card" class="see_project_card" data-index="2">See Project</a>
       </div>
       <div class="project_card card3">
         <h3 class="card_title mobile">Professional Art<br> Printing Data</h3>
@@ -103,7 +132,7 @@
           <li class="tool_card">Bootstrap</li>
           <li class="tool_card">Ruby</li>
         </ul>
-        <a href="#" class="see_project_card">See Project</a>
+        <a href="#popup-card" class="see_project_card" data-index="3">See Project</a>
       </div>
       <div class="project_card card1" id="card4">
         <h3 class="card_title">Professional Art<br> Printing Data</h3>
@@ -114,7 +143,7 @@
           <li class="tool_card">Bootstrap</li>
           <li class="tool_card">Ruby</li>
         </ul>
-        <a href="#" class="see_project_card">See Project</a>
+        <a href="#popup-card" class="see_project_card" data-index="4">See Project</a>
       </div>
       <div class="project_card card2" id="card5">
         <h3 class="card_title mobile">Professional Art<br> Printing Data</h3>
@@ -126,7 +155,7 @@
           <li class="tool_card">Bootstrap</li>
           <li class="tool_card">Ruby</li>
         </ul>
-        <a href="#" class="see_project_card">See Project</a>
+        <a href="#popup-card" class="see_project_card" data-index="5">See Project</a>
       </div>
       <div class="project_card card3" id="card6">
         <h3 class="card_title mobile">Professional Art<br> Printing Data</h3>
@@ -138,7 +167,7 @@
           <li class="tool_card">Bootstrap</li>
           <li class="tool_card">Ruby</li>
         </ul>
-        <a href="#" class="see_project_card">See Project</a>
+        <a href="#popup-card" class="see_project_card" data-index="6">See Project</a>
       </div>
     </div>
   </section>
@@ -148,7 +177,7 @@
       <p class="about_me_description">Hello I'm a software developer! I can help you build a product , feature or
         website Look through some of my work and experience! If you like what you see and have a project you need coded,
         don't hesitate to contact me.</p>
-      <a href="#" class="about_me_button">Get my resume</a>
+      <a href="#projects" class="about_me_button">Get my resume</a>
     </div>
     <hr class="about_me_break">
     <div class="about_me_skills">

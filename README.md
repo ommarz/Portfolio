@@ -42,7 +42,6 @@
   </ul>
 </details>
 
-
 <details>
   <summary>Server</summary>
   <ul>
@@ -50,14 +49,12 @@
   </ul>
 </details>
 
-
 <details>
 <summary>Database</summary>
   <ul>
     <li><a href=></a></li>
   </ul>
 </details>
-
 
 <!-- Features -->
 
@@ -71,8 +68,7 @@
 
 ### 🚀 Live Demo
 
-[https://ommarz.github.io/Portfolio/#]()
-
+[Live Demo](https://ommarz.github.io/Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
